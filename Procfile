@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT furniture-shop-api-flask:server
+web: gunicorn --bind 0.0.0.0:$PORT server:server
