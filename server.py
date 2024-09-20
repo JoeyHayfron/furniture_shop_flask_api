@@ -1,5 +1,4 @@
 import os
-
 from app import create_app
 
 app = create_app(os.getenv("CONFIG_MODE"), __name__)
@@ -7,4 +6,7 @@ app = create_app(os.getenv("CONFIG_MODE"), __name__)
 
 @app.route("/")
 def get_home():
-    return 'Working now'
+    return "Working now"
+
+
+from app.urls import product

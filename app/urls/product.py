@@ -1,7 +1,7 @@
 from flask import request
 
 from ..controllers.product import list_all_products, create_product
-from ..server import app
+from server import app
 
 
 @app.route('/products', methods=['GET', 'POST'])
